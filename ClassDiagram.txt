@@ -1,0 +1,107 @@
+-----------------------------------------------------------------
+|                        Library                                |
+-----------------------------------------------------------------
+| - books:   List<Book>                                         |
+| - authors: List<Author>                                       |
+| - patrons: List<Patron>                                       |
+-----------------------------------------------------------------
+| +addBook(book: Book): void                                    |
+| +removeBook(book: Book): void                                 |
+| +addAuthor(author: Author): void                              |
+| +removeAuthor(author: Author): void                           |
+| +addPatron(patron: Patron): void                              |
+| +removePatron(patron: Patron): void                           |
+| +searchBookByTitle(title: String): Book                       |
+| +searchBookByAuthor(authorName: String): Book                 |
+| +searchBookByISBN(ISBN: String): Book                         |
+| +borrowBook(patron: Patron, book: Book, numCopies: int): void |
+| +returnBook(patron: Patron, book: Book, numCopies: int): void |
+-----------------------------------------------------------------
+
+
+
+
+----------------------------------------------
+|                Book                        |
+----------------------------------------------
+| - title: String                            |
+| - author: Author                           |
+| - ISBN: String                             |
+| - publisher: String                        |
+| - numCopies: int                           |
+| - status: Status                           |
+----------------------------------------------
+| +getTitle(): String                        |
+| +setTitle(title: String): void             |
+| +getAuthor(): Author                       |
+| +setAuthor(author: Author): void           |
+| +getISBN(): String                         |
+| +setISBN(ISBN: String): void               |
+| +getPublisher(): String                    |
+| +setPublisher(publisher: String): void     |
+| +getNumCopies(): int                       |
+| +setNumCopies(numCopies: int): void        |
+| +getStatus(): Status                       |
+| +setStatus(status: Status): void           |
+| +borrowBook(numCopies: int): void          |
+| +returnBook(numCopies: int): void          |
+----------------------------------------------
+
+
+
+
+---------------------------------------------------------
+|                         Author                        |
+---------------------------------------------------------
+| - name: String                                        |
+| - dateOfBirth: String                                 |
+| - booksWritten: List<Book>                            |
+---------------------------------------------------------
+| +getName(): String                                    |
+| +setName(name: String): void                          |
+| +getDateOfBirth(): String                             |
+| +setDateOfBirth(dateOfBirth: String): void            |
+| +getBooksWritten(): List<Book>                        |
+| +setBooksWritten(booksWritten: List<Book>): void      |
+| +addBook(book: Book): void                            |
+---------------------------------------------------------
+
+
+
+
+
+----------------------------------------------------------
+|                          Patron                        |
+----------------------------------------------------------
+| - name: String                                         |
+| - address: String                                      |
+| - phoneNumber: String                                  |
+| - borrowedBooks: List<Book>                            |
+----------------------------------------------------------
+| +getName(): String                                     |
+| +setName(name: String): void                           |
+| +getAddress(): String                                  |
+| +setAddress(address: String): void                     |
+| +getPhoneNumber(): String                              |
+| +setPhoneNumber(phoneNumber: String): void             |
+| +getBorrowedBooks(): List<Book>                        |
+| +setBorrowedBooks(borrowedBooks: List<Book>): void     |
+| +borrowBook(book: Book, numCopies: int): void          |
+| +returnBook(book: Book, numCopies: int): void          |
+----------------------------------------------------------
+
+----------------------------------------
+|              Borrowable              |
+----------------------------------------
+| +borrowBook(numCopies: int): void    |
+| +returnBook(numCopies: int): void    |
+----------------------------------------
+
+
+----------------------------------------
+|                Status                |
+----------------------------------------
+| AVAILABLE                            |
+| CHECKED_OUT                          |
+| OVERDUE                              |
+----------------------------------------

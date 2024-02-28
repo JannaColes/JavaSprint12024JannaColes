@@ -1,0 +1,38 @@
+The Library Management System is a software application designed to streamline the process of managing library resources such as books, authors and patrons. It allows librarians to efficiently handle book borrowing, returns and inventory management.
+
+Accessing the System:
+To access the Library Management System:
+- Ensure you have the necessary credentials provided by the system administrator.
+- Open the application by running the test java file.
+
+Main Features:
+
+- Borrowing and Returning Books:
+Users can borrow books from the library by electing the desired book and specifying the number of copies they want to borrow.
+
+To return books, users need to go to the "Return Books" section, select the book(s) they want to return and specify the number of copies to be returned.
+
+- Searching for books
+Users can search for books by title, author or ISBN using the search functionality provided in the application. You can enter the keywords in the search bar and hit the search button to generate the matching results.
+
+- Managing Authors and Patrons
+The librarians have the ability to add new authors and patrons to the system. This feature enables them to maintain an up-to-date database of authors and the patrons who borrow books.
+
+- Adding and Removing Books
+Librarians can add new books to the library inventory by providing details such as the title, author, ISBN, publisher and the number of copies available.
+
+They can also remove books from the inventory in a similar manner if the books are no longer available.
+
+- Displaying Book Status
+The application provides real-time updates on the availability status of all the books in the inventory. Users can check whether a book is available for borrowing or if it has been check out already.
+
+- Handling Overdue Books
+The system automatically tracks due dates for borrowed books and marks them as overdue if they are not returned within the specified time-frame. Librarians can take appropriate actions to remind patrons of overdue books and collect any late fees that are associated. 
+
+- Managing Multiple Copies of Books
+If the library has multiple copies of the same book, users can specify the desired number of copies to borrow and return. This feature ensures flexibility in managing inventory based on the library's available stock.
+
+
+
+
+
